@@ -6,6 +6,20 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
+
 export class App {
-  protected readonly title = signal('introAngular');
+
+  titulo:string="Arturo López"
+  duplicaNumero(num:number):number{
+    return num*2
+  }
+
+
+pelicula={
+  titulo:"El Padrino",
+  anio:1972,
+  genero:"Crimen/Drama",
+  fechadeLanzamiento:new Date(),
+  precio:345
+  }
 }
